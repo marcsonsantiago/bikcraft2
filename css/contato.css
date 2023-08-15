@@ -1,0 +1,339 @@
+.icone::after {
+  display: none;
+}
+
+.icone {
+  padding-bottom: 60px;
+}
+
+.contato {
+  width: 100%;
+  height: 596px;
+  background-color: var(--cor-11);
+  box-shadow: inset 0 -260px var(--cor-0);
+}
+
+.contato-detalhe {
+  width: 1160px;
+  height: 576px;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-left: 70px;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+}
+
+/* LOJA ONLINE */
+.contato-detalhe-loja {
+  background-color: var(--cor-12);
+  padding-top: 60px;
+  padding-left: 60px;
+  position: relative;
+}
+
+.contato-detalhe-loja::after {
+  content: "";
+  display: inline-flex;
+  padding-right: 8px;
+  width: 52px;
+  height: 52px;
+  background-image: url(../img/dec/bottom-left.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+}
+
+.contato-detalhe-loja h3 {
+  padding-bottom: 60px;
+}
+
+.contato-detalhe-loja p {
+  padding-left: 28px;
+  position: relative;
+}
+
+.contato-detalhe-loja p::before {
+  content: "";
+  display: inline-flex;
+  padding-right: 8px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icones/local.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0px;
+}
+
+.icone-email {
+  padding: 40px 0 40px 28px;
+  position: relative;
+}
+
+.icone-email::before {
+  content: "";
+  display: inline-flex;
+  padding-right: 8px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icones/email.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0px;
+}
+
+.icone-telefone {
+  padding-left: 28px;
+  position: relative;
+}
+
+.icone-telefone::before {
+  content: "";
+  display: inline-flex;
+  padding-right: 8px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icones/telefone.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0px;
+}
+
+.contato-detalhe-loja-redes {
+  padding-top: 32px;
+  display: flex;
+  gap: 32px;
+}
+
+/* FORMULÁRIO */
+.contato-detalhe-nome {
+  background-color: var(--cor-0);
+  padding: 60px 30px 60px 60px;
+  position: relative;
+  width: auto;
+}
+
+.contato-detalhe-nome::after {
+  content: "";
+  display: flex;
+  width: 52px;
+  height: 52px;
+  background-image: url(../img/dec/bottom-right.svg);
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+.contato-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.caixa-1 {
+  width: 280px;
+  height: 42px;
+  background-color: var(--cor-2);
+  border-radius: 5px;
+}
+
+.caixa-2 {
+  width: 596px;
+  height: 42px;
+  background-color: var(--cor-2);
+  border-radius: 5px;
+}
+
+.caixa-3 {
+  width: 596px;
+  height: 154px;
+  background-color: var(--cor-2);
+  border-radius: 5px;
+}
+
+.form-caixa {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-caixa input:hover {
+  background-color: var(--cor-5);
+}
+
+.form-caixa input:focus {
+  box-shadow: 0 0 0 4px var(--cor-p1);
+}
+
+.form-caixa-alinhar {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* LOJAS LOCAIS */
+.lojas {
+  margin-top: 120px;
+  margin-left: 70px;
+}
+
+.lojas h2 {
+  margin-bottom: 60px;
+}
+
+.lojas-estados {
+  width: 1160px;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 120px;
+}
+
+.lojas-estados-cidade {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  height: 512px;
+}
+
+.lojas-estados-cidade img {
+  width: 560px;
+  height: 260px;
+  margin-bottom: 32px;
+}
+
+.lojas-estados-cidade h3,
+.lojas-estados-cidade h4 {
+  position: relative;
+  margin-left: 60px;
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+
+.lojas-estados-cidade h3::before {
+  content: "";
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  position: absolute;
+  top: 20px;
+  left: -24px;
+}
+
+.lojas-estados-cidade h4::before {
+  content: "";
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icones/horario.svg);
+  position: absolute;
+  top: 0px;
+  left: -28px;
+}
+
+.lojas-contatos {
+  margin-left: 74px;
+  width: 333px;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 1200px) {
+  .icone {
+    height: auto;
+  }
+
+  .contato {
+    box-shadow: none;
+    background-color: var(--cor-0);
+    height: auto;
+  }
+
+  .contato-detalhe {
+    grid-template-columns: 1fr;
+    width: auto;
+    height: auto;
+    padding-left: 0;
+    justify-items: center;
+  } 
+
+  .contato-detalhe-loja {
+    padding-bottom: 60px;
+    padding-right: 60px;
+    width: auto;
+  }
+
+  .contato-detalhe-nome {
+    width: auto;
+  }
+
+  .contato-detalhe-loja::after,
+  .contato-detalhe-nome::after {
+    display: none;
+  }
+
+  .caixa-1 {
+    width: 200px;
+  }
+
+  .caixa-2,
+  .caixa-3 {
+    width: 440px;
+  }
+
+  .lojas,
+  .lojas-estados {
+    width: auto;
+  }
+
+  .lojas-estados-cidade {
+    width: 400px;
+  }
+
+  .lojas-estados-cidade img {
+    width: 400px;
+    height: auto;
+  }
+}
+
+@media (max-width: 950px) {
+  .lojas-estados {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .contato-detalhe-loja {
+    padding: 30px;
+  }
+
+  .contato-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .caixa-1,
+  .caixa-2,
+  .caixa-3 {
+    width: auto;
+  }
+
+  .lojas-estados-cidade {
+    width: auto;
+  }
+
+  .lojas-estados-cidade img {
+    width: 250px;
+    height: auto;
+  }
+
+  .lojas-contatos {
+    grid-template-columns: 1fr;
+  }
+}

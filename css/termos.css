@@ -1,0 +1,15 @@
+.termos {
+  padding: 97px 70px 120px 70px;
+  max-width: 760px;
+  height: auto;
+}
+
+.termos h1 {
+  font-weight: bold;
+  margin-top: 23px;
+  margin-bottom: 20px;
+}
+
+.termos p {
+  margin-bottom: 25px;
+}
