@@ -157,9 +157,6 @@ padding: 60px 0 8px 70px;
 .conteudo-fotos img:first-child {
   width: 560px;
   height: 440px;
-}
-
-.fotos-alinhar {
   grid-column-start: 1;
   grid-column-end: 3;
 }
